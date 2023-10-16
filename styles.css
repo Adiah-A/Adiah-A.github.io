@@ -39,7 +39,7 @@ h2 {
 
 .center-div img {
     border-radius: 10px;
-    max-width: 35%; /* Ensure the image doesn't exceed the container's width */  
+    max-width: 25%; /* Ensure the image doesn't exceed the container's width */  
 }
 
 .center-div p {
