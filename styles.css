@@ -1,49 +1,93 @@
-body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    background-color: #e7d7d7;
-}
-
-h2 {
-    color: #333;
-}
-
- /* Navbar styles */
- .navbar {
-    background-color: #333; /* Background color of the navbar */
-    overflow: hidden; /* Ensure that it doesn't overflow the content */
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 20px; /* Adjust as needed */
-}
-
-.navbar a {
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underlines from links */
-}
-
-.center-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.center-div img {
-    border-radius: 10px;
-    max-width: 35%; /* Ensure the image doesn't exceed the container's width */  
-}
-
-.center-div p {
-    max-width: 60%;
-    text-align: left; /* Center the text horizontally */
-}
-
+ 
+    body {
+        font-family: Georgia, serif;
+        background-color: black;
+        color: white;
+      }
+  
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+  
+      nav ul {
+        list-style: none;
+        text-align: center;
+      }
+  
+      nav li {
+        display: inline;
+        margin: 0 20px;
+      }
+  
+      nav a {
+        text-decoration: none;
+        color: white;
+      }
+  
+      #hero {
+        background-image: url('img.jpeg'); /* Add a background image */  
+        background-size: cover;
+        text-align: center;
+        padding: 150px 0;
+      }
+  
+      #hero h1 {
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 36px;
+        color: white;
+      }
+  
+      #hero p {
+        font-family: Georgia, serif;
+        font-size: 18px; 
+        color: white;
+      }
+  
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: black;
+        color: white;
+      }
+  
+      ul {
+          list-style: disc;
+          margin-left: 20px; 
+      }
+  
+      li {
+          margin: 15px 0; 
+      }
+  
+      /* Spinning Vinyl Styles */
+      .vinyl-container {
+          position: relative;
+          padding-top: 300px;
+          border-radius: 50%; 
+          overflow: hidden; 
+      }
+  
+      .vinyl-img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        animation: spin 4s linear infinite;
+        border-radius: 50%;
+      }
+  
+      .vinyl-container a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-decoration: none;
+        border-radius: 50%; 
+      }
+  
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
